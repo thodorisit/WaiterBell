@@ -199,7 +199,7 @@ You can check and search through all notifications by using the search form. Thi
 * ### Settings
 
 You can update business information.
-#### But the most important part is the global firewall for the customers web app. You can add specific IP addresses (e.g. IP address of your business), so users outside of your network will not be able to make requests and he will be redirected to the 404 page!
+#### But the most important part is the global firewall for the customers web app. You can add specific IP addresses (e.g. IP address of your business), so users outside your network will not be able to make requests and they will be redirected to 404!
 
 <img style="width:100%;" alt="waiterbell logo" src="https://user-images.githubusercontent.com/3685481/80149898-1cb41380-85c0-11ea-876b-b1e6fa641841.png">
 
