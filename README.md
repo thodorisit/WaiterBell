@@ -105,7 +105,7 @@ your-domain.com/master/delete_business?securiy_key={MASTER_SECURITY_KEY}&busines
 ```
 ```
 {MASTER_SECURITY_KEY} is the unhashed MASTER_SECURITY_KEY key (for example "098f6bcd4621d373cade4e832627b4f6" equals to "test").
-{id} is a unique id which will be given to your account automatically and you can see it visiting the homepage.
+{id} is a unique id which will be given to your account automatically and you can get it by visiting the homepage.
 ```
 
 ##### Your should use the browser in incognito mode to keep passwords secure.
