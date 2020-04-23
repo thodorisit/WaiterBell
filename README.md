@@ -18,6 +18,7 @@ DB_DATABASE=
 DB_USERNAME=
 DB_PASSWORD=
 ```
+Update and all other necessary variables in .env file (APP_KEY, ...)!
 
 Install the required packages.
 ```
