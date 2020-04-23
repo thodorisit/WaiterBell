@@ -122,7 +122,7 @@ MASTER_ACCESS=0
 
 ### Now it's time for the good part...
 
-## WaiterBell consists of three subapplications and three route groups.
+## WaiterBell consists of three subapplications.
 #### [1. Business app](https://github.com/thodorisit/WaiterBell#1-business-app-1)
 #### [2. Employee app](https://github.com/thodorisit/WaiterBell#2-employee-app-1)
 #### [3. Customer app](https://github.com/thodorisit/WaiterBell#3-customer-app-1)
