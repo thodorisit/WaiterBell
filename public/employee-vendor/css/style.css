@@ -1,0 +1,633 @@
+* {
+    outline:0 !important;
+    border-radius: 0px !important;
+    border: none;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+body {
+    padding:0;
+    margin:0;
+    background-color: #fdfdfd;
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.app-container {
+    position: relative;
+    display: block;
+}
+.app-container--content {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin-left:5%;
+    color:#3a3a3a;
+}
+
+.login-page {
+    width: 360px;
+    padding: 30px 0;
+    margin: auto;
+    text-align:Center;
+}
+@media only screen and (max-width: 600px) {
+    .login-page {
+        width: 90%;
+    }
+}
+.login-page--title {
+    padding:0px;
+    margin:0px 0px 10px 0px;
+    text-align:left;
+    color:#FFFFFF;
+    font-weight:100;
+    font-size:20px;
+}
+.login-page--form-container {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    margin: 0px 0px;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.login-page--form-container--login-form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin-top:5px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.login-page--form-container--login-form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #6610f2;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.login-page--form-container--login-form button:hover,.form button:active,.form button:focus {
+    background: #6610f2;
+}
+.login-page--form-container--login-form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.login-page--form-container--login-form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.login-page--form-container--login-form--label {
+    font-size:14px;
+    color:#0A0A0A;
+    text-align:left;
+    margin-top:5px;
+}
+.login-page--logo {
+    position:relative;
+    display:block;
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+    top: -10px;
+}
+.login-page--form-container--login-form--alert {
+    position: relative;
+    display: block;
+    text-align:left;
+    font-size:14px;
+    color:#c00b0b;
+}
+.login-page--form-container--login-form--alert--message {
+    position: relative;
+    display: block;
+    padding: 5px 0px;
+}
+
+.menu-button {
+    position: fixed;
+    background:#FFFFFF;
+    height:50px;
+    width:50px;
+    right:10px;
+    top:10px;
+    z-index:1554;
+    cursor: pointer;
+}
+.menu-button--line {
+    position: relative;
+    display: block;
+    width:60%;
+    height:2px;
+    background:#555555;
+    top:12px;
+    margin-top:5px;
+    margin-left:20%;
+}
+.menu {
+    position:fixed;
+    display: none;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#FFFFFF;
+    z-index:1555;
+}
+.menu.open {
+    display: block;
+}
+.menu--close-button {
+    position: fixed;
+    display: block;
+    right:10px;
+    top:10px;
+    width:50px;
+    line-height: 50px;
+    font-size:20px;
+    text-align: center;
+    background:#FFFFFF;
+    z-index:1;
+    cursor: pointer;
+}
+.menu--container {
+    position: relative;
+    width:100%;
+    height:100%;
+    padding-top:50px;
+    overflow:auto;
+}
+.menu--container--title {
+    position: relative;
+    display: block;
+    width:80%;
+    padding:15px 10%;
+    font-size:20px;
+    margin-top:20px;
+}
+.menu--container--item {
+    position: relative;
+    display: block;
+}
+.menu--container--item--link {
+    position: relative;
+    display: block;
+    width:80%;
+    padding:20px 0px;
+    margin-left:10%;
+    color: #292929;
+    font-size:26px;
+    font-weight: 900;
+    text-align:right;
+}
+.menu--container--item--select-input {
+    position: relative;
+    display: block;
+    width:80%;
+    margin-left:10%;
+    margin-top:10px;
+    font-size:16px;
+    padding:20px 0px;
+    background:#FFFFFF;
+    text-align: left;
+    text-align-last: left;
+    -moz-text-align-last: left;
+}
+.menu--container--item--select-label {
+    position: relative;
+    display: block;
+    width:80%;
+    padding:20px 0px 0px 0px;
+    margin-left:10%;
+    color: #292929;
+    font-size:18px;
+    font-weight: 900;
+    text-align:left;
+}
+
+
+.notification-menu-badge--button {
+    position: absolute;
+    display: block;
+    line-height: 30px;
+    padding: 0px 10px;
+    bottom: -30px;
+    right: 0px;
+}
+.notification-menu-badge--button:empty {
+    display:none;
+}
+
+.topbar {
+    position: relative;
+    display: block;
+    width:90%;
+    margin:50px 5% 30px 5%;
+}
+.topbar--title {
+    position: relative;
+    display: block;
+    font-size:30px;
+    color:#3a3a3a;
+    font-weight: 900;
+}
+.topbar--subtitle {
+    position: relative;
+    display: block;
+    font-size:17px;
+    color:#3a3a3a;
+    font-weight: 400;
+}
+
+.card {
+    position: relative;
+    display: block;
+    background: #FFFFFF;
+    border-left: 2px solid #6610f2;
+    width:100%;
+}
+.card--title {
+    position: relative;
+    display: block;
+    padding:10px 5%;
+    width:90%;
+}
+.card--content {
+    position: relative;
+    display: block;
+    width:100%;
+}
+.card--content--row {
+    position: relative;
+    display: block;
+}
+.card--content--row.width-full {
+    padding:0px 0px 0px 0px;
+    width:100%;
+}
+.card--content--row.width-padding {
+    padding:0px 5% 0px 5%;
+    width:90%;
+}
+.card--content--row:nth-last-child(2) {
+    padding-bottom:10px;
+}
+.card--content---button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding:10px 0px;
+    font-size: 17px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.filters-icon {
+    position: fixed;
+    background: #6610f2;
+    right: 10px;
+    bottom: 20px;
+    padding:13px;
+    z-index: 1554;
+    cursor: pointer;
+}
+.filters-icon--svg {
+    fill: #FFFFFF;
+    width:24px;
+    height:24px;
+}
+.filters {
+    position: fixed;
+    display: none;
+    height:100%;
+    width:100%;
+    background:#fdfdfd;
+    top:0;
+    left:0;
+    z-index: 2555;
+}
+.filters.open {
+    display: block;
+}
+.filters--close-button {
+    position: fixed;
+    display: block;
+    right:10px;
+    top:10px;
+    width:50px;
+    line-height: 50px;
+    font-size:20px;
+    text-align: center;
+    background:#FFFFFF;
+    z-index:1;
+    cursor: pointer;
+}
+.filters--title {
+    position: relative;
+    display: block;
+    font-size: 25px;
+    color: #3a3a3a;
+    font-weight: 900;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 60px;
+}
+.filters--container {
+    position: relative;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.filters-badges {
+    position: relative;
+    display: block;
+}
+
+.form-group {
+    position: relative;
+    display: block;
+    width:100%;
+    margin:15px auto;
+}
+.form-group--label {
+    position: relative;
+    display: block;
+    width:90%;
+    margin:10px auto;
+    font-size:17px;
+    font-weight: 900;
+    margin-bottom:5px;
+    color:#292929;
+}
+.form-group--form-control {
+    position: relative;
+    display: block;
+    background:#FFFFFF;
+    width:90%;
+    margin:10px auto;
+    font-size:16px;
+    padding: 12px;
+}
+.form-group--btn-primary {
+    position: relative;
+    display: block;
+    width:90%;
+    margin:20px auto;
+    font-size:16px;
+    padding: 15px;
+}
+.form-group--btn-secondary {
+    position: relative;
+    display: block;
+    margin:20px 0px 20px 5%;
+    font-size:16px;
+    padding: 15px 35px;
+    background:#FFFFFF;
+    color:#555555;
+}
+
+.toasts-container {
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background:rgba(255, 0, 0, 0.5);
+}
+.toast {
+    position: relative;
+    display: block;
+    width:90%;
+    padding:15px 0px;
+    margin-left:5%;
+    border:1px #b3b3b3 solid;
+}
+
+.paginator {
+    position: relative;
+    display: block;
+    width:100%;
+    margin-top:10px;
+    font-size:14px;
+    padding:20px 0px;
+    text-align: center;
+}
+.paginator--label {
+    position: relative;
+    display: inline-block;
+    padding:20px 0px;
+    font-size:16px;
+    font-weight: 900;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+}
+.paginator--select-page {
+    position: relative;
+    display: inline-block;
+    padding:20px 30px;
+    margin-left:20px;
+    background:#FFFFFF;
+    font-size:16px;
+    font-weight: 900;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+.footer {
+    position: relative;
+    display: block;
+    width:90%;
+    padding:0px 0px 40px 0px;
+    margin-left:5%;
+    margin-top:30px;
+    text-align: center;
+    font-size:10px;
+}
+
+.shadow-light {
+    -webkit-box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.shadow-longer {
+    box-shadow: 0 2px 1px rgba(0,0,0,0.04), 
+                0 4px 2px rgba(0,0,0,0.04), 
+                0 8px 4px rgba(0,0,0,0.04), 
+                0 16px 8px rgba(0,0,0,0.04),
+                0 32px 16px rgba(0,0,0,0.04);
+}
+
+.bg-purple {
+    background: #6610f2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #6f42c1, #6610f2);
+    background: -moz-linear-gradient(right, #6f42c1, #6610f2);
+    background: -o-linear-gradient(right, #6f42c1, #6610f2);
+    background: linear-gradient(to left, #6f42c1, #6610f2);
+}
+
+.color-white {
+    color:#FFFFFF;
+}
+
+.text-xl {
+    font-size:20px;
+}
+.text-lg {
+    font-size:16px;
+}
+.text-md {
+    font-size:13px;
+}
+.text-sm {
+    font-size:11px;
+}
+.text-bold {
+    font-weight: 900;
+}
+
+.m-0 {margin:0px;}
+.m-1 {margin:6px;}
+.m-2 {margin:12px;}
+.m-3 {margin:18px;}
+.m-4 {margin:24px;}
+.m-5 {margin:30px;}
+.m-6 {margin:36px;}
+.mt-0 {margin-top:0px;}
+.mt-1 {margin-top:6px;}
+.mt-2 {margin-top:12px;}
+.mt-3 {margin-top:18px;}
+.mt-4 {margin-top:24px;}
+.mt-5 {margin-top:30px;}
+.mt-6 {margin-top:36px;}
+.mb-0 {margin-bottom:0px;}
+.mb-1 {margin-bottom:6px;}
+.mb-2 {margin-bottom:12px;}
+.mb-3 {margin-bottom:18px;}
+.mb-4 {margin-bottom:24px;}
+.mb-5 {margin-bottom:30px;}
+.mb-6 {margin-bottom:36px;}
+.ml-0 {margin-left:0px;}
+.ml-1 {margin-left:6px;}
+.ml-2 {margin-left:12px;}
+.ml-3 {margin-left:18px;}
+.ml-4 {margin-left:24px;}
+.ml-5 {margin-left:30px;}
+.ml-6 {margin-left:36px;}
+.mr-0 {margin-right:0px;}
+.mr-1 {margin-right:6px;}
+.mr-2 {margin-right:12px;}
+.mr-3 {margin-right:18px;}
+.mr-4 {margin-right:24px;}
+.mr-5 {margin-right:30px;}
+.mr-6 {margin-right:36px;}
+
+.p-0 {padding:0px;}
+.p-1 {padding:6px;}
+.p-2 {padding:12px;}
+.p-3 {padding:18px;}
+.p-4 {padding:24px;}
+.p-5 {padding:30px;}
+.p-6 {padding:36px;}
+.pt-0 {padding-top:0px;}
+.pt-1 {padding-top:6px;}
+.pt-2 {padding-top:12px;}
+.pt-3 {padding-top:18px;}
+.pt-4 {padding-top:24px;}
+.pt-5 {padding-top:30px;}
+.pt-6 {padding-top:36px;}
+.pb-0 {padding-bottom:0px;}
+.pb-1 {padding-bottom:6px;}
+.pb-2 {padding-bottom:12px;}
+.pb-3 {padding-bottom:18px;}
+.pb-4 {padding-bottom:24px;}
+.pb-5 {padding-bottom:30px;}
+.pb-6 {padding-bottom:36px;}
+.pl-0 {padding-left:0px;}
+.pl-1 {padding-left:6px;}
+.pl-2 {padding-left:12px;}
+.pl-3 {padding-left:18px;}
+.pl-4 {padding-left:24px;}
+.pl-5 {padding-left:30px;}
+.pl-6 {padding-left:36px;}
+.pr-0 {padding-right:0px;}
+.pr-1 {padding-right:6px;}
+.pr-2 {padding-right:12px;}
+.pr-3 {padding-right:18px;}
+.pr-4 {padding-right:24px;}
+.pr-5 {padding-right:30px;}
+.pr-6 {padding-right:36px;}
+
+.d-block {
+    display: block;
+}
+.d-inline {
+    display: inline;
+}
+.d-inline-block {
+    display: inline-block;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.badge-success {
+    position: relative;
+    display: inline-block;
+    padding:5px;
+    background:#4CAF50;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top:5px;
+}
+.badge-warning {
+    position: relative;
+    display: inline-block;
+    padding:5px;
+    background:#FFCC00;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top:5px;
+}
+.badge-purple {
+    position: relative;
+    display: inline-block;
+    padding:5px;
+    background:#6610f2;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top:5px;
+}
+.badge-purple-outline {
+    position: relative;
+    display: inline-block;
+    padding:4px;
+    background:#FFFFFF;
+    color: #555555;
+    font-size: 13px;
+    border:1px #6610f2 solid;
+    margin-top:5px;
+}
+.badge-margin-left-minus-px {
+    margin-left:-5px;
+}

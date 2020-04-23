@@ -1,0 +1,71 @@
+* {
+    outline:0 !important;
+    border-radius: 0px !important;
+}
+a {
+    text-decoration: none !important;
+}
+button {
+    border: none;
+}
+
+.rounded {
+    border-radius: 0px !important;
+}
+
+.btn-outline-danger {
+    background:#FFFFFF;
+    border: 1px #e74c3c solid !important;
+}
+.btn-outline-primary {
+    background:#FFFFFF;
+    border: 1px #3e206d solid !important;
+}
+
+.bg-white {
+    background:#FFFFFF;
+}
+
+.form-error {
+    border: 2px solid #e74c3c;
+}
+
+.sidebar-logo-horizontal {
+    position: relative;
+    display: block;
+    width:90%;
+    left:5%;
+}
+.sidebar-logo-vertical {
+    position: relative;
+    display: block;
+    width:90%;
+    left:5%;
+}
+
+.settings-logo {
+    max-width:200px;
+    margin-left:12px;
+    margin-bottom:10px;
+}
+
+/*
+* START:: Toasts
+*/
+.toast.show {
+    width:300px;
+}
+.toasts-container {
+    position: fixed;
+    z-index: 15525;
+    max-width: 340px;
+    max-height: 100%;
+    padding:20px;
+    margin: 0px;
+    top: 0px;
+    right: 0px;
+    overflow: auto;
+}
+/*
+* END:: Toasts
+*/
