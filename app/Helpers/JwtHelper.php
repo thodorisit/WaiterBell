@@ -5,7 +5,7 @@ namespace App\Helpers;
 class JwtHelper {
      
      public static function init_key() {
-        $jwtKey = '@#kl$%13dk$di94%23%6!!-=9dSJnJ&*3dKl!d@dK5$dk';
+        $jwtKey = env('APP_KEY');
         return $jwtKey;
      }
       
