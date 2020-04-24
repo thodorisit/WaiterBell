@@ -9,7 +9,7 @@ class QrCodeController extends Controller {
         $_url_param__data = $request->input('data');
         $_url_param__height = intval($request->input('height'));
         $_url_param__width = intval($request->input('width'));
-        if (empty($_url_param__data) || empty($_url_param__data) || empty($_url_param__data)) {
+        if (empty($_url_param__data) || empty($_url_param__height) || empty($_url_param__width)) {
             abort(404);
         } else {
             $googleChartAPI = 'http://chart.apis.google.com/chart';
