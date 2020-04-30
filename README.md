@@ -1,5 +1,7 @@
 <img width="300" alt="waiterbell logo" src="https://user-images.githubusercontent.com/3685481/80137226-a3122a80-85ab-11ea-9f60-d5dbc49a4cc9.png">
 
+[Visit WaiterBell's page](https://waiterbell.itsios.eu/)
+
 ## Welcome to WaiterBell random person!
 
 WaiterBell is an application that helps your customers call the employees of your business easily without having to stand up, shout or move their hands in an abnormal way. Customers are not referees!
