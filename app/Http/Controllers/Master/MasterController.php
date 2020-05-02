@@ -14,6 +14,7 @@ use App\Language;
 use App\Notification;
 use App\RequestTypes;
 use App\Translation;
+use App\Pivot\LabelEmployee as PivotLabelEmployee;
 
 class MasterController extends Controller {
     public function __construct() {
@@ -108,6 +109,7 @@ class MasterController extends Controller {
             Notification::where('business_id', $_url_param__business_id)->delete();
             RequestTypes::where('business_id', $_url_param__business_id)->delete();
             Translation::where('business_id', $_url_param__business_id)->delete();
+            PivotLabelEmployee::where('business_id', $_url_param__business_id)->delete();
             return 'Business was deleted!';
         } else {
             abort(404);
